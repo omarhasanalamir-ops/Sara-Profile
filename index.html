@@ -10,58 +10,65 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family: Arial, sans-serif;
+    font-family:Arial,sans-serif;
 }
 
 body{
-    background: linear-gradient(135deg,#0f172a,#1e3a8a);
+    min-height:100vh;
     display:flex;
     justify-content:center;
     align-items:center;
-    min-height:100vh;
+    background:linear-gradient(135deg,#0f172a,#1e3a8a);
     padding:20px;
 }
 
 .card{
-    background:white;
-    width:400px;
-    border-radius:20px;
-    padding:30px;
+    width:420px;
+    background:#fff;
+    border-radius:25px;
+    padding:35px;
     text-align:center;
-    box-shadow:0 10px 30px rgba(0,0,0,0.3);
+    box-shadow:0 15px 40px rgba(0,0,0,.3);
 }
 
 .profile-img{
-    width:120px;
-    height:120px;
-    border-radius:50%;
+    width:180px;
+    height:180px;
     margin:auto;
-    background:#dbeafe;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:50px;
+    border-radius:50%;
+    overflow:hidden;
+    border:5px solid #2563eb;
+    box-shadow:0 5px 20px rgba(37,99,235,.4);
+}
+
+.profile-img img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
 }
 
 h1{
-    margin-top:15px;
+    margin-top:20px;
     color:#0f172a;
+    font-size:2rem;
 }
 
 .position{
+    margin-top:10px;
     color:#2563eb;
     font-weight:bold;
-    margin-top:10px;
+    font-size:1.2rem;
 }
 
 .institute{
+    margin-top:10px;
     color:#555;
-    margin-top:8px;
+    line-height:1.6;
 }
 
 .email{
     margin-top:15px;
-    color:#333;
+    font-weight:bold;
 }
 
 .buttons{
@@ -72,22 +79,23 @@ h1{
 }
 
 .btn{
-    text-decoration:none;
     background:#2563eb;
     color:white;
-    padding:12px;
-    border-radius:10px;
+    text-decoration:none;
+    padding:14px;
+    border-radius:12px;
+    font-weight:bold;
     transition:.3s;
 }
 
 .btn:hover{
     background:#1d4ed8;
+    transform:scale(1.03);
 }
 
 .footer{
     margin-top:20px;
     color:#777;
-    font-size:14px;
 }
 </style>
 </head>
@@ -97,14 +105,12 @@ h1{
 <div class="card">
 
     <div class="profile-img">
-        👩‍🔬
+        <img src="sarah.jpg" alt="Dr. Sarah Hamdy Rashedy">
     </div>
 
     <h1>Dr. Sarah Hamdy Rashedy</h1>
 
-    <p class="position">
-        Assistant Professor
-    </p>
+    <p class="position">Assistant Professor</p>
 
     <p class="institute">
         National Institute of Oceanography and Fisheries (NIOF), Egypt
@@ -115,25 +121,17 @@ h1{
     </p>
 
     <div class="buttons">
-
-        <a class="btn"
-        href="https://www.linkedin.com/in/dr-sarah-hamdy-135b9079/"
-        target="_blank">
-        LinkedIn
+        <a class="btn" href="https://www.linkedin.com/in/dr-sarah-hamdy-135b9079/" target="_blank">
+            LinkedIn
         </a>
 
-        <a class="btn"
-        href="https://scholar.google.com.eg/citations?hl=en&user=BglUXn0AAAAJ"
-        target="_blank">
-        Google Scholar
+        <a class="btn" href="https://scholar.google.com.eg/citations?hl=en&user=BglUXn0AAAAJ" target="_blank">
+            Google Scholar
         </a>
 
-        <a class="btn"
-        href="https://www.researchgate.net/profile/Sarah-Rashedy"
-        target="_blank">
-        ResearchGate
+        <a class="btn" href="https://www.researchgate.net/profile/Sarah-Rashedy" target="_blank">
+            ResearchGate
         </a>
-
     </div>
 
     <div class="footer">
@@ -143,7 +141,7 @@ h1{
 </div>
 
 <script>
-console.log("Academic Profile Loaded");
+console.log("Academic Profile Loaded Successfully");
 </script>
 
 </body>
